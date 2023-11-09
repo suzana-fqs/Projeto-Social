@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+body{
+    background-image: url(../imagens/fundo-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.744);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../imagens/frame-iphone.png) ;
+    width: 311px;
+    height: 626px;
+}
