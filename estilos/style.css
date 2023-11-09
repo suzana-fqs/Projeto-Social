@@ -46,6 +46,7 @@ section#redes-sociais img:hover{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399);
     border: solid 1px rgba(255, 255, 255, 0.83); /* com o box-sizing: border-box acima, a borda não destorce, treme, mexe as imagens em hover*/
     transform: scale(125%);
+    transition: transform 0.1s;
  }
 
 section#redes-sociais{
@@ -55,8 +56,6 @@ section#redes-sociais{
     transform: translate(-50%, 320%);
  }
 
- 
-
 iframe#tela{
     width: 267px;
     height: 470px;
@@ -64,7 +63,7 @@ iframe#tela{
     border-radius: 2px;
 }
 
-/*Tirar barra de rolagem fo iframe*/
+/*Tirar barra de rolagem do iframe*/
 ::-webkit-scrollbar{
     width: 0;
     height: 0;
