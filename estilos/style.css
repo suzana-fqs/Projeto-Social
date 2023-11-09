@@ -23,7 +23,6 @@ main{
     background-color: rgba(0, 0, 0, 0.744);
     width: 100vw;
     height: 100vh;
-
 }
 
 section#telefone{
@@ -37,26 +36,37 @@ section#telefone{
 }
 
 section#redes-sociais img{
-    width: 57px;
-    border-radius: 50%;
-    padding: 1px;
+    width: 50px;
+    border-radius: 30%;
+    margin: 0 4px;
+    box-sizing: border-box; /*Para a borda fazer parte do objeto e não deixar todas as img mexendo qdo estiver em hover*/
 }
 
-section#redes-sociais{
+section#redes-sociais img:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399);
+    border: solid 1px rgba(255, 255, 255, 0.83); /* com o box-sizing: border-box acima, a borda não destorce, treme, mexe as imagens em hover*/
+    transform: scale(125%);
+ }
 
+section#redes-sociais{
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, 320%);
+ }
 
-    transform: translate(-50%, 270%);
-   
-
-}
+ 
 
 iframe#tela{
     width: 267px;
     height: 470px;
-    margin: 81px 0 0 22px;
+    margin: 80px 0 0 22px;
     border-radius: 2px;
-    
 }
+
+/*Tirar barra de rolagem fo iframe*/
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
