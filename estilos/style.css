@@ -38,7 +38,9 @@ section#telefone{
 section#redes-sociais img{
     width: 50px;
     border-radius: 30%;
-    margin: 0 4px;
+    border: solid 2px white;
+    box-shadow: 5px 5px 25px rgba(237, 237, 237, 0.204);
+    margin: 10px 4px;
     box-sizing: border-box; /*Para a borda fazer parte do objeto e não deixar todas as img mexendo qdo estiver em hover*/
 }
 
@@ -49,12 +51,12 @@ section#redes-sociais img:hover{
     transition: transform 0.1s;
  }
 
-section#redes-sociais{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 320%);
- }
+    section#redes-sociais{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(240%, -50%);
+    }
 
 iframe#tela{
     width: 267px;
